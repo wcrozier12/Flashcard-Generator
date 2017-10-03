@@ -1,0 +1,25 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "FlashCard-Generator",
+  "main": "logic.js",
+  "dependencies": {
+    "inquirer": "^3.3.0",
+    "browserify": "^14.4.0",
+    "require": "^2.4.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wcrozier12/Flashcard-Generator.git"
+  },
+  "author": "Cody Crozier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wcrozier12/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/wcrozier12/Flashcard-Generator#readme"
+}
