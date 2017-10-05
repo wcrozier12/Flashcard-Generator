@@ -7,25 +7,6 @@ let clozeCards = [];
 let allCards = [];
 let cardCounter = 0;
 
-function createCard() {
-  inquirer
-  .prompt([
-    {
-      type :'list',
-      message: 'What type of card would you like to create?',
-      choices: ['Basic Card', 'Cloze Card'],
-      name: 'cardType'
-    }
-  ]).then(function(response) {
-    if (response.cardType === 'Basic Card') {
-      basicCard();
-    }
-    else {
-      clozeCard();
-    }
-  })
-}
-
 function userOptions() {
   inquirer
   .prompt([
@@ -52,7 +33,27 @@ function userOptions() {
     }
   });
 }
-    
+
+//---------------------------------------------------------------------------------------------------------------------------------------//
+//----------------------------------------------------------Card creation functions------------------------------------------------------//
+function createCard() {
+  inquirer
+  .prompt([
+    {
+      type :'list',
+      message: 'What type of card would you like to create?',
+      choices: ['Basic Card', 'Cloze Card'],
+      name: 'cardType'
+    }
+  ]).then(function(response) {
+    if (response.cardType === 'Basic Card') {
+      basicCard();
+    }
+    else {
+      clozeCard();
+    }
+  })
+}
 
 function basicCard() {
   inquirer
@@ -113,7 +114,8 @@ function viewCards() {
   }
   userOptions();
 }
-
+//---------------------------------------------------------------------------------------------------------------------------------------//
+//-------------------------------------------------Test user functions-------------------------------------------------------------------//
 function testKnowledge() {
   inquirer
   .prompt([
@@ -249,6 +251,8 @@ function testAll() {
     userOptions();
   }
 };
+
+
 userOptions();
 
     
