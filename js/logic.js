@@ -29,6 +29,7 @@ function userOptions() {
         testKnowledge()
         break;
       case 'Exit (All cards will be lost)':
+        console.log('Goodbye')
         break;
     }
   });
